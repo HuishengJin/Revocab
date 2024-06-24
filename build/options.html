@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+    <link rel="stylesheet" href="options.css">
+<script defer src="options.js"></script></head>
+<body>
+    <div class="container">
+        <h1>Extension Options</h1>
+
+        <div class="upload-section">
+            <h2>Upload Vocabs List</h2>
+            <input type="file" id="vocabUpload" accept=".json">
+            <button id="uploadVocabsBtn">Upload Vocabs List</button>
+        </div>
+
+        <div class="select-section">
+            <h2>Select Vocabs List</h2>
+            <select id="vocabsListSelected"></select>
+        </div>
+
+        <div class="load-section">
+            <h2>Load Vocabs</h2>
+            <input type="number" id="loadCount" placeholder="Number of vocabs">
+            <button id="loadRandomVocabsBtn">Load Randomly</button>
+            <button id="loadOrderedVocabsBtn">Load Orderly</button>
+            <button id="loadAllVocabsBtn">Load All</button>
+        </div>
+
+        <div class="export-section">
+            <h2>Export Vocab Lists</h2>
+            <button id="exportAllInactiveVocabsListsBtn">Export All Inactive Lists</button>
+            <button id="exportSelectedInactiveVocabsListBtn">Export Selected Inactive List</button>
+            <button id="exportActiveVocabsListBtn">Export Active Vocabs List</button>
+        </div>
+
+	<div class="delete-section">
+            <h2>Delete or Clear Vocabs Lists</h2>
+            <button id="removeAllInactiveVocabsListsBtn">Remove All Inactive Lists</button>
+            <button id="removeSelectedInactiveVocabsListBtn">Remove Selected Inactive List</button>
+            <button id="clearActiveVocabsListBtn">Clear Active List</button>
+	</div>
+
+	<div class="args">
+	    <h2>Customizable Arguments</h2>
+
+	    <label style="display:none" for="topkEntry"><b>top_k</b>: How many places does the target replacement word need to rank in order to replace the original word(between 1 and 100)</label>
+	    <input style="display:none" type="number" id="topkEntry">
+	    <label for="careCheck">
+	    	    <input type="checkbox" id="careCheck">
+		    <b>Contextual Consideration</b>: Whether to consider validity of the replacement when putting as substitution in different context</label>
+
+	    <br>
+	    <button id="argsApplyBtn">Apply Setting</button>
+	</div>
+
+        <div id="status" class="status"></div>
+    </div>
+</body>
+</html>

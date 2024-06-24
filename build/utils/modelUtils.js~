@@ -1,0 +1,6 @@
+export async function requestForValidReplacements(...data) {
+    //console.log("Sending request", data);
+    const r =  await chrome.runtime.sendMessage({ action: "findValidReplacements", data });
+    console.log('RESPONSE!', r);
+    return r;
+}
