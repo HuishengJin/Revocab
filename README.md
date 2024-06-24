@@ -10,7 +10,7 @@ Follow these steps to install the Revocab extension:
 2. Download the extension source code and save it to a local directory. The directory should include the `build` folder.
 3. Open Chrome and navigate to [chrome://extensions/](chrome://extensions/).
 4. Enable "Developer mode" by toggling the switch in the upper-right corner.
-5. Click the "Load unpacked" button and select the directory containing the `build` folder.
+5. Click the "Load unpacked" button and select the `build` folder.
 6. Revocab should now appear in your list of extensions. Make sure it is enabled.
 
 ## Usage Guide
