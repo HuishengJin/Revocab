@@ -1,0 +1,15 @@
+Modify a Chrome extension called Revocab that helps the user in learning English by replacing synonyms of a list of vocabs that the user is trying to learn with the vocabs.
+
+{PLACEHOLDER}
+
+Before modifying anything, here are some reminders:
+1. You are not to create a template or a beginning guide! Get all the work done in one go! No empty files or placeholders in functions!
+2. Replacement should be done with context consideration so that replacement makes sense just as the original by utilizing the mask-filling ability of ALBERT.
+3. You're encouraged to write some of the methods and functions in the utils folder. Especially those that may be called multiple times.
+4. Notice that webpack automatically loads a js file for a html file. So, do not add a script node for html file under 'src', because doing so would duplicate the script.
+5. The roles of functions could be easily guessed just by seeing their names. The arguments, variable names, function names, and file names must not be confusing or ambiguous.
+6. NEVER write any method, logic, function, or algorithm twice.
+7. Ensure that EVERY function is placed in the BEST position that MAKES THE MOST SENSE.
+8. WHENEVER something is modified, ALWAYS consider its effects. For example, altering the util name would necessitate modifying all the codes that called it.
+
+Say 'I am prepared' and I will tell you what to modify.
